@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    border: 2px dashed black;
+    width: 300px;
+}
+
+.item1 {
+    background-color: cyan;
+    border: 2px solid blue;
+}
+
+.item2 {
+    background-color: cyan;
+    border: 2px solid blue;
+    flex-grow: 1;
+}
+
+.item3 {
+    background-color: cyan;
+    border: 2px solid blue;
+    flex-grow: 2;
+}
+
+.item4 {
+    background-color: cyan;
+    border: 2px solid blue;
+    width: 100px;
+    flex-shrink: 1;
+}
+
+.item5 {
+    background-color: cyan;
+    border: 2px solid blue;
+    width: 100px;
+    flex-shrink: 2;
+}

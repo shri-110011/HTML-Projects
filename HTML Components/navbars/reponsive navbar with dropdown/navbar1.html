@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="styles.css"></link>
+        <style></style>
+        <script></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="navbar-items-list">
+                <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Our Products</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">About Us</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Contact Us</a></li>
+                <li class="navbar-item dropdown" onclick="dropdownExpand()">
+                    <a href="#" class="navbar-link">Dropdown
+                        <small>&#x25BC;</small>
+                    </a>
+                    <ul class="dropdown-content" id="myDropdown">
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">Link 1</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">Link 2</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">Link 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar-item-right"><a href="#" class="navbar-link">Login</a></li>
+                <li class="navbar-item-right"><a href="#" class="navbar-link">Signup</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            // JS code to expand the dropdown on clicking over it.
+            function dropdownExpand() {
+                var dropdownContent = document.getElementById("myDropdown");
+                if(!dropdownContent.classList.contains("show")) {
+                    dropdownContent.classList.add("show");
+                }
+            }
+    
+            /* JS code to collapse the dropdown if the user clicks somewhere else on the 
+            document. except the dropdown link.*/
+            window.onclick = function(e) {
+                if(!e.target.matches(".dropdown > .navbar-link")) {
+                    document.getElementById("myDropdown").classList.remove("show");
+                }
+            }
+        </script>
+    </body>
+</html>

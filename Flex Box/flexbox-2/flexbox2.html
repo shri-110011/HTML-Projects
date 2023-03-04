@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn flexbox basics 2</title>
+        <link rel="stylesheet" href="styles.css"></link>
+    </head>
+    <body>
+        <h3>Here we learn the flex item property: flex-basis</h3>
+        <p>Here flex-basis property with value 90px is used to define the size of the 
+        flex-item that would be available to the flex-item inside the flex container. </p>
+        <div class="container">
+            <div class="item">Today is Saturday but I like Wednesday</div>
+            <div class="item"></div>
+        </div>
+        <p>Here the flex-basis property value is auto, in this case the browser looks to 
+        see if the items have a size i.e. if the flex items have any pre-defined width then 
+        that is used as the flex item size. If the items don't have a size then the content's 
+        size is used as the flex-basis.</p>
+        <div class="container">
+            <div class="item2">Today is Saturday but I like Wednesday</div>
+            <div class="item2"></div>
+        </div>
+        <p>Here the flex-basis property value is auto, in this case the browser looks to 
+        see if the items have a size i.e. if the flex items have any pre-defined width then 
+        that is used as the flex item size. If the items don't have a size then the content's 
+        size is used as the flex-basis.</p>
+        <div class="container">
+            <div class="item2">Today is Saturday but I like Wednesday</div>
+            <div class="item2">I like programming</div>
+        </div>
+        <p>Here flex-basis property with value 60px is used. If the value of the flex-basis 
+        is smaller than the content size then the flex-item will have a size equal to that of 
+        its content.
+        </p>
+        <div class="container">
+            <div class="item3">Today is Saturday but I like Wednesday</div>
+            <div class="item3">I like programming</div>
+        </div>
+        <p>Here flex-basis property with value auto and width of 60px is used. And here the
+        flex-item size will be 60px. If the content of that flex-item is more than 60px 
+        then that content would overflow.  </p>
+        <div class="container">
+            <div class="item4">Today is Saturday but I like Wednesday</div>
+            <div class="item4">I like programming</div>
+        </div>
+    </body>
+</html>

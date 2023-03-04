@@ -1,0 +1,109 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+  		<div tabindex="0" class="button">Home</div>
+  		<div class="content">
+  			“A house is made of bricks and beams. A home is made of hopes and dreams. Home is where our story begins…”
+  		</div>
+  		<div tabindex="0" class="button">Contact</div>
+  		<div class="content">
+  			“Contacts added but not one is worthy enough to remain as their priority.”
+  		</div>
+  		<div tabindex="0" class="button">About</div>
+  		<div class="content">
+  			“To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.”
+  		</div>
+  	</div>
+</body>
+</html>
+
+
+.menu {
+    height: 24%;
+    width: 600px;
+    margin: auto;
+    border: 1px solid RGBA(0,0,0,.4);
+    font-family: calibri, monospace;
+    float: left;
+}
+.menu .button{
+    width: 150px;
+    height: 32%;
+    background: #333;
+    border:1px solid white;
+    color: #e7e7e7;
+    font-weight: 600;
+    
+}
+.content{
+    background: #f3f3f3;
+    width: 440px;
+    height: 23%;
+    margin-left: 155px;
+    border: 1px solid #e7e7e7
+}
+
+
+html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+body{
+    display: flex;
+    margin: auto;
+}
+
+
+var fs = require("fs");
+
+describe("Filter function", () => {
+  let file;
+  beforeAll(() => {
+    file = fs.readFileSync("styles.css").toString();
+    file = file.replace(/\r?\n|\r| /g, "");
+  });
+  test("button's cursor should be pointer", () => {
+    expect(file).toMatch(/\.button{*[^}]*cursor:pointer;/);
+  });
+
+  test("button's desplay should be flex", () => {
+    expect(file).toMatch(/\.button{*[^}]*display:flex;/);
+  });
+
+  test("button's should be align center", () => {
+    expect(file).toMatch(/\.button{*[^}]*align-items:center;/);
+  });
+
+  test("button's content should be justify center", () => {
+    expect(file).toMatch(/\.button{*[^}]*justify-content:center;/);
+  });
+
+  test("content should display none", () => {
+    expect(file).toMatch(/\.content{*[^}]*display:none;/);
+  });
+
+  test("content position should be absolute", () => {
+    expect(file).toMatch(/\.content{*[^}]*position:absolute;/);
+  });
+
+  test("content items should be align center", () => {
+    expect(file).toMatch(/\.content{*[^}]*align-items:center;/);
+  });
+
+  test("content should be justify center", () => {
+    expect(file).toMatch(/\.content{*[^}]*justify-content:center;/);
+  });
+
+  test("button hover and focus should exists", () => {
+    expect(file).toMatch(/\.button:focus,\.button:hover{*[^}]*/);
+  });
+
+  test("button focus and content should exists", () => {
+    expect(file).toMatch(/\.button:focus\+\.content{*[^}]*/);
+  });
+});

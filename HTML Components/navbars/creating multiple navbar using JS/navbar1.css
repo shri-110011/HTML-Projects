@@ -1,0 +1,32 @@
+body {
+    margin:0;
+}
+.navbar {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:darkslategrey;
+}
+#search {
+    top:12px;
+    position: relative;
+    border-radius:5px;
+    height:25px;
+}
+.menu-item {
+    float:left;
+}
+ .menu-item-right {
+    float:right;
+}
+.menu-link {
+    display:inline-block;
+    padding:14px 15px;
+    text-align:center;
+    text-decoration:none;
+    color:floralwhite;
+}
+.menu-link:hover {
+    background-color:purple;
+}

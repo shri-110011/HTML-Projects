@@ -1,0 +1,20 @@
+#selenium-logo-container {
+    margin-bottom: 20px;
+}
+#container-1 {
+    height: 300px;
+    border: 1px solid black;
+}
+#container-1 h2 {
+    text-align: center;
+}
+#container-1 h3 {
+    margin-left: 10px;
+}
+#container-1 ol li {
+    line-height: 40px;
+}
+#container-2 button {
+    height: 30px;
+    margin: 0 auto;
+}

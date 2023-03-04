@@ -1,0 +1,72 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.sidebar {
+    width: 18%;
+    background-color:#e7dddd;
+    height: 100%;
+    overflow: auto;
+    float: left;
+}
+
+.sidebar-items-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* Below we are controlling the amount of headroom for the side bar content. But we need
+    to be careful while setting this head room, for example if we provide a large headroom
+    for the the sidebar-items-list then in the case when multiple sidebar-items-list with
+    their corresponding headers are there, the headers starting from position 2 onwards may 
+    get overlapped by the above sidebar-items-list.*/
+    position: relative;
+    top: 10px;
+}
+
+.sidebar-item.active {
+    background-color: #41c0eb;
+}
+
+.sidebar-item:hover {
+    background-color: #41c0eb;
+}
+
+.sidebar-item > a {
+    text-decoration: none;
+    padding: 5px 5px 5px 15px;
+    color: black;
+    /* Below style makes the entire sidebar-item clickable */
+    display: block;
+}
+
+/* It is important to set the overflow property as hidden for the main-content because
+otherwise the sidebar will have some spacing over the top in case the main-content has 
+block level elements that have a top margin by default like the p(para tag) or 
+h1-h6(heading tags).  */
+.main-content {
+    overflow: hidden;
+    margin-left: 20%;
+}
+
+@media screen and (max-width: 920px) {
+    .sidebar {
+        width: 180px;
+    }
+    .main-content {
+        margin-left: 195px;
+    }
+}
+.sidebar-hidden {
+    display: none;
+}
+.sidebar h3 {
+    padding: 5px 5px 5px 15px;
+    margin-bottom: 0;
+}

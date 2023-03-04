@@ -1,0 +1,4 @@
+-Use Flex to align divs in your html.
+-Use the background image and bird svg given to you
+-Create a sliding window effect to get the flapping effect of the bird.
+-fly-cycle animation should make the bird fly accross the screen and fly-one-right should make the svg window move right

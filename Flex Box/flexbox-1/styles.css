@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    border: 2px dashed black;
+    width: 300px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px dashed black;
+    width: 300px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 2px dashed black;
+    width: 300px;
+}
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed black;
+    width: 300px;
+}
+
+.container5 {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 2px dashed black;
+    width: 300px;
+}
+
+.item {
+    background-color: cyan;
+    width: 100px;
+    border: 2px solid blue;
+}
+
+.item2 {
+    background-color: cyan;
+    width: auto;
+    border: 2px solid blue;
+}

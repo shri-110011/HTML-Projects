@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn flexbox basics 1</title>
+        <link rel="stylesheet" href="styles.css"></link>
+    </head>
+    <body>
+        <h3>Here we learn the flex-direction and flex-wrap properties of the flexbox.</h3>
+        <p>The width of container is set as 300px and that of the flex-item is 100px</p>
+        <div class="container">
+            <div class="item">Today is Saturday but I like Wednesday</div>
+            <div class="item">I like programming</div>
+            <div class="item">Learning Recact</div>
+        </div>
+        <p>Using flex-wrap property value as nowrap would cause an overflow if the items were 
+        not able to shrink, or could not shrink small enough to fit. Note the minimum width 
+        of the flex item is equal to the longest word in the flex item content.</p>
+        <div class="container">
+            <div class="item">Today is Saturday but I like Wednesday</div>
+            <div class="item">I like programming</div>
+            <div class="item">Learning Recact</div>
+            <div class="item">Today is Saturday</div>
+            <div class="item">I like programming</div>
+        </div>
+        <p>Here we set the flex-wrap property value as wrap. So we see that now the flex-item 
+        width of 100px is being preserved</p>
+        <div class="container2">
+            <div class="item">Today is Saturday but I like Wednesday</div>
+            <div class="item">I like programming</div>
+            <div class="item">Learning Recact</div>
+            <div class="item">Today is Saturday</div>
+            <div class="item">I like programming</div>
+        </div>
+        <p>Here we set the flex-direction property to row-reverse.</p>
+        <div class="container3">
+            <div class="item">Today is Saturday but I like Wednesday</div>
+            <div class="item">I like programming</div>
+            <div class="item">Learning Recact</div>
+        </div>
+        <p>Here we set the flex-direction property to column.</p>
+        <div class="container4">
+            <div class="item">Today is Saturday but I like Wednesday</div>
+            <div class="item">I like programming</div>
+            <div class="item">Learning Recact</div>
+        </div>
+        <p>Here we set the flex-direction property to column-reverse.</p>
+        <div class="container5">
+            <div class="item">Today is Saturday but I like Wednesday</div>
+            <div class="item">I like programming</div>
+            <div class="item">Learning Recact</div>
+        </div>
+        <p>Here we set the flex-direction property to column and the flex-item width is auto.</p>
+        <div class="container4">
+            <div class="item2">Today is Saturday but I like Wednesday</div>
+            <div class="item2">I like programming</div>
+            <div class="item2">Learning Recact</div>
+        </div>
+    </body>
+</html>

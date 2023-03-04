@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+.grid-container {
+
+    /*An HTML element becomes a grid container when its display property is set to 
+    grid or inline-grid. All direct children of the grid container automatically 
+    become grid items.*/
+    display: inline-grid;
+
+    /*The grid-template-columns property defines the number of columns in your grid 
+    layout, and it can define the width of each column.*/
+    grid-template-columns: auto auto auto;
+
+    /*The grid-column-gap property sets the gap between the columns:*/
+    column-gap: 10px;
+
+    /*The grid-row-gap property sets the gap between the rows:*/
+    row-gap: 10px;
+    padding: 10px;
+    background-color: rgb(107, 107, 165);
+    width: 300px;
+    border: 1px solid black;
+}
+.grid-item {
+    background-color: aqua;
+    padding: 5px;
+    border: 1px solid black;
+}
+#item2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

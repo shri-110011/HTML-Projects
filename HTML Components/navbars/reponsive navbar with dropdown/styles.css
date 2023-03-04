@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+.navbar > .navbar-items-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: rgb(2, 7, 13);
+    overflow: hidden;
+}
+.navbar-item {
+    float: left;
+}
+.navbar-item-right {
+    float: right;
+}
+li.navbar-item-right > a {
+    padding-right: 15px;
+}
+a.navbar-link {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 14px;
+    display: inline-block;
+}
+a.navbar-link-selected {
+    background-color: red;
+}
+.navbar-link:hover, .dropdown:hover {
+    background-color: red;
+}
+
+/* CSS for dropdown content */
+.dropdown-content {
+    display: none;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    list-style-type: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-link {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    display: block;
+    padding: 5px 7px;
+}
+.dropdown-link:hover {
+    background-color: rgb(174, 180, 186);
+}
+
+/* CSS for expanding the dropdown on hover action */
+/* .dropdown:hover > .dropdown-content {
+    display: block;
+} */
+.dropdown-content.show {
+    display: block;
+}
+
+@media screen and (max-width: 760px) {
+    /* CSS to stack the navbar items vertically*/
+    .navbar-item, .navbar-item-right {
+        float: none;
+    }
+    /* To change the dropdown content width from min-width to 100% of the parent*/
+    .dropdown-content {
+        width: 100%;
+    }
+}

@@ -1,0 +1,55 @@
+
+
+.wrapper{
+	width: 600px;
+	height:300px;
+	border: 1px solid black;
+	border-radius: 7px;
+	margin: 50px auto;
+	overflow: hidden;
+	
+}
+.slider{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    top: 20%;
+    left: -10%;
+	width:105px; 
+	height: 100%;
+	animation-name: slide;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-delay: 0;
+}
+.sliding-background{
+	background-size: auto 100%;
+	background-position: 0px 0px;
+	height:100px;
+	width:70px;
+	background-image: url("bird-cells.svg");
+	animation-name: fly-cycle;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0s;   
+    /*animation: fly-cycle 1s steps(10) -0.5s infinite;*/
+	/*border: 1px solid black;*/
+	border-radius: 7px;
+	z-index: 1;
+	/*margin: 5px;*/
+}
+@keyframes fly-cycle {  
+  100% {
+    background-position: 725px 0;
+  }
+}
+@keyframes slide {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(500px);
+  }
+}

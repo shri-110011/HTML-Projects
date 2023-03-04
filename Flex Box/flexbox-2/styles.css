@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    border: 2px dashed black;
+    width: 300px;
+}
+
+.item {
+    background-color: cyan;
+    flex-basis: 90px;
+    border: 2px solid blue;
+}
+
+.item2 {
+    background-color: cyan;
+    flex-basis: auto;
+    border: 2px solid blue;
+}
+
+.item3 {
+    background-color: cyan;
+    flex-basis: 60px;
+    border: 2px solid blue;
+}
+
+.item4 {
+    background-color: cyan;
+    flex-basis: auto;
+    width: 60px;
+    border: 2px solid blue;
+}

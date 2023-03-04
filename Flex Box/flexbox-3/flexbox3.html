@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn flexbox basics 3</title>
+        <link rel="stylesheet" href="styles.css"></link>
+    </head>
+    <body>
+        <h3>Here we learn the flex item property: flex-grow and flex-shrink</h3>
+        <p>Here we use just flex-basis property set as auto.</p>
+        <div class="container">
+            <div class="item1">One</div>
+            <div class="item1">Two</div>
+        </div>
+        <p>Here we use just flex-basis property set as auto and the flex-grow set as 1. 
+        So the available remaining space in the flex-container is being divided equally.</p>
+        <div class="container">
+            <div class="item2">One</div>
+            <div class="item2">Two</div>
+        </div>
+        <p>Here we use just flex-basis property set as auto and the flex-grow set as 2
+        for first item and 1 for second item. 
+        So the available remaining space in the flex-container is being divided 
+        proportionally.</p>
+        <div class="container">
+            <div class="item3">One</div>
+            <div class="item2">Two</div>
+        </div>
+        <p>Here we use just flex-basis property set as auto and the flex-shrink set as 1. 
+        So the space would be taken away equally from each flex-item.</p>
+        <div class="container">
+            <div class="item4">One</div>
+            <div class="item4">Two</div>
+            <div class="item4">One</div>
+            <div class="item4">Two</div>
+        </div>
+        <p>Here we use just flex-basis property set as auto and the flex-shrink set as 2
+        for the first item and 1 for the second item. 
+        So the space would be taken away proportionally from each flex-item.</p>
+        <div class="container">
+            <div class="item5">One</div>
+            <div class="item4">Two</div>
+            <div class="item5">One</div>
+            <div class="item4">Two</div>
+        </div>
+    </body>
+</html>
